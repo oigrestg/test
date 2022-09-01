@@ -179,7 +179,7 @@ p {
     color: #129CF3;
 }
 
-.header-iphone img {
+.header-dj img {
     width: 100%;   
 }
 
@@ -651,10 +651,77 @@ p {
     font-size: 25px;
 }
 
-/*   SWIPER   */
+/*   REQUEST   */
+.form-label{
+    color: #ddd;
+}
+
+.form-margin{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10%;
+}
+
+.margen-inferior{
+    margin-bottom: 100px;
+}
+
+.campos-obligatorios{
+    color: red;
+    font-size: 12x;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.request-div {
+    background-image: url("../images/home degradado.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+}
+.request-div-overlay{
+    background-color: rgba(31, 31, 31, 0.75);
+}
+
+.request-div h2{
+    color: #ddd;
+}
+
+.request-div p{
+    color: #ddd;
+}
 
 
 
+
+
+/* Toast */
+#toasts{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.toast{
+    width: 300px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 0.5rem;
+    color: #ffffff;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    
+}
 
 
 

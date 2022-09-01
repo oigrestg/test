@@ -74,7 +74,7 @@
                       </button>
                       <a class="navbar-brand" href="#">
                           <!-- small size logo -->
-                          <img src="images/logo-small.png" alt="logo">
+                          <img src="images/blanco_sin_fondo_pequeño.png" alt="logo">
 
                         </a>
                     </div>
@@ -83,8 +83,8 @@
                 <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                         <li><a href="#HOME" class="nav-item">HOME</a></li>
-                        <li><a href="#ABOUT" class="nav-item">ABOUT</a></li>
-                        <li><a href="#FEATURES" class="nav-item">FEATURES</a></li>
+                        <li><a href="#PROXIMOSEVENTOS" class="nav-item">PRÓXIMOS EVENTOS</a></li>
+                        <li><a href="#PETICIONES" class="nav-item">PETICIONES</a></li>
                         <li><a href="#SCREENS" class="nav-item">SCREENS</a></li>
                         <li><a href="#DOWNLOAD" class="nav-item">DOWNLOAD</a></li>
                         <li><a href="#CONTACT" class="nav-item">CONTACT</a></li>
@@ -126,14 +126,15 @@
                             <div class="header-text">
                             
                                 <!-- Title & Description -->
-                                <h1> A clean and modern looking reponsive website</h1>
-                                <p> Built with great love!</p>
+                                <h1>¿Quiéres conocer a Dj Rituals</h1>
+                                <p>Este es tu sitio</p>
                             
                             </div>
                             
-                            <div class="header-btns">
+                            <!-- <div class="header-btns">
                             
-                                <!-- Header buttons -->
+                               Header buttons 
+                               
                                 <a class="btn btn-download wow fadeInLeft" href="#">Download</a>
                                 <a class="btn btn-tour wow fadeInRight" href="#"> Take A Tour
                                 
@@ -141,17 +142,17 @@
                                 </a>
                                 
                             
-                            </div>
+                            </div>-->
                             
                         </div>
                         
                         <div class="col-md-3 col-md-offset-1">
                         
-                            <div class="header-iphone">
+                            <div class="header-dj">
                             
                             
                                 <!-- Header iPhone -->
-                                <img src="images/Oscar_Herrera_DJ.png" alt = "header iphone">
+                                <img src="images/Oscar_Herrera_DJ.png" alt = "Imagen Sergio">
                             
                             </div>
                         
@@ -172,7 +173,7 @@
 
         <!-- Próximos Eventos -->
 
-        <section id="EVENTS">
+        <section id="PROXIMOSEVENTOS">
             <div class="container">
                 <div class="row"></div>
                     <div class="col-md-10 col-md-offset-1">
@@ -188,7 +189,7 @@
             </div>
 
             <!-- Calendario de eventos -->
-            <div class="container">
+            <div class="container margen-inferior">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <div class="blog-slider">
@@ -289,7 +290,61 @@
 
 
         
-        <!-- About Us -->
+       
+
+
+            <!-- Peticiones -->
+        <section id="PETICIONES" class="request-div">
+            <div class="request-div-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <!-- About us Title & Description -->
+                            <div class="section-title">                        
+                                <h2> Peticiones </h2>
+                                <p>¿Adoras alguna canción? ¿Quieres escuchar algún temazo del momento?<br>Mandame tus peticiones musicales.<br> Si aún no ha comenzado el evento indícame en comentarios adicionales de cuál se trata para tenerla en cuenta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <form>
+                              <div>
+                                <label for="request_name" class="form-label">Nombre*</label>
+                                <input type="text" class="form-control form-margin" id="request_name" required>
+                              </div>
+                              <div>
+                                <label for="request_title" class="form-label">Título*</label>
+                                <input type="text" class="form-control form-margin" id="request_title" required>
+                              </div>
+                              <div>
+                                <label for="request_author" class="form-label">Artista</label>
+                                <input type="text" class="form-control form-margin" id="request_author">
+                              </div>
+                              <div>
+                                <label for="request_comentarios" class="form-label">Comentarios adicionales</label>
+                                <textarea type="text" class="form-control form-margin" id="request_comentarios" rows="4" placeholder="Envíame cualquier otra info referente a tu petición"></textarea>
+                              </div>
+                              <p class="campos-obligatorios">* Campos obligatorio</p>
+                              <div><div id="toasts"></div>
+                              
+                                <button id="submit-request" class="btn btn-primary margen-inferior submit-btn" type="submit">Enviar Petición</button>
+                                
+                              </div>
+                            </form>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+ <!-- CONTACTO -->
         <section id="CONTACTO">
             <div class="container">
                 <div class="row">
@@ -303,104 +358,23 @@
                 </div>
             </div>
         
-            <div class="choose-us-wraper"> <!-- Cambiar nombre -->
-                <div class="container">               
-                    <div class="row">                   
-                        <div class="col-md-10 col-md-offset-1">
-                        
-                            <form action="https://formsubmit.co/oigrestg@gmail.com" method="POST">
-                                <input type="text" name="name" required>
-                                <input type="email" name="email" required>
-                                <button type="submit">Send</button>
-                            </form>
-
-
-
-                        
+             <div class="contact-us-form wow bounceIn">
+                <div class="container">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="name" placeholder="Nombre*">
+                                <input type="email" class="form-control" id="email" placeholder="Email*">
+                                <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                            </div>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" rows="25" cols="10" placeholder="Message...."></textarea>
+                                <button type="button" class="btn btn-default submit-btn form_submit margen_inferior">Enviar</button>
+                            </div>
                         </div>
-                    </div>                
-                </div>            
+                    </form>
+                </div>
             </div>
-        
-        
-
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<form action="form.php">
- Name:<br>
- <input type="text" name="name" placeholder="Your Name">
- <br>
- Message:<br>
- <textarea name="message" placeholder="Your Message Here" rows="6" cols="33"></textarea>
- <br><br>
- <input type="submit" value="Submit">
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </section>
         
         
         <!-- Testimonials -->
@@ -1113,6 +1087,9 @@
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
+
+        <!-- Peticiones -->
+        <script src="js/form.js"></script>
         
     </body>
 
