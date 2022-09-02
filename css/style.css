@@ -673,7 +673,9 @@ p {
     margin-bottom: 10px;
 }
 
-.request-div {
+
+/* EVENTOS */
+.eventos-div {
     background-image: url("../images/home degradado.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -683,20 +685,68 @@ p {
     -webkit-background-size: cover;
     background-position: 50% 50%;
 }
-.request-div-overlay{
-    background-color: rgba(31, 31, 31, 0.75);
-}
 
-.request-div h2{
+.eventos-div h2{
     color: #ddd;
 }
 
-.request-div p{
+.eventos-div p{
     color: #ddd;
 }
 
+/* PETICIONES */
+
+.form-label{
+    color: #333;
+}
 
 
+/* CONTACTO */
+.contact-div {
+    background-image: url("../images/home degradado.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+}
+
+.contact-div h2{
+    color: #ddd;
+}
+
+.contact-div p{
+    color: #ddd;
+}
+
+.contact-div input{
+    color: red;
+}
+
+.contact-form input[type=text]{
+  background-color: white;
+  color: #333;
+}
+.contact-form input[type=email]{
+  background-color: white;
+  color: #333;
+}
+.contact-form textarea[type=text]{
+  background-color: white;
+  color: #ddd;
+}
+.contact-form label{
+  color: white;
+}
+
+.contact-form p{
+    color: red;
+    font-size: 12x;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 /* Toast */
@@ -709,25 +759,54 @@ p {
     align-items: flex-end;
 }
 
-.toast{
-    width: 300px;
-    height: 70px;
-    border-radius: 5px;
-    margin: 0.5rem;
-    color: #ffffff;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row-reverse;
-    
+
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 6px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
 }
 
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
 
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
 
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
 
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
 
-
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
 
 
 
