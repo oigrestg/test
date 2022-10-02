@@ -10,8 +10,9 @@ form.addEventListener("click", (e) => {
 	var titulo = document.getElementById("request_title").value;
 	var artista = document.getElementById("request_author").value;
 	var comentarios = document.getElementById("request_comentarios").value;
+	var privacidad = document.getElementById("request_privacity").checked;
 
-	if(titulo!="" && nombre!=""){
+	if(titulo!="" && nombre!="" && privacidad){
 
 		var token = "5452726860:AAHH-fAmPN_FkoFgZGnC7XtRzHu0iKf-gmw"
 		var chat_id = -631993148

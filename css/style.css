@@ -108,8 +108,20 @@ p {
     background-color: rgba(31, 31, 31, 0.75);
 
 }
+
+.col {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .logo {
     padding-bottom: 50px;
+    padding-top: 50px   ;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .header-text h1 {
     color: #fff;
