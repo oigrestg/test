@@ -118,8 +118,7 @@ p {
 }
 
 .logo {
-    padding-bottom: 50px;
-    padding-top: 50px   ;
+    padding-top: 100px   ;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -758,6 +757,10 @@ p {
     font-size: 12x;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.contact_message{
+    height: 100%;
+    color: red;
 }
 
 
